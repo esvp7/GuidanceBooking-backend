@@ -17,6 +17,10 @@ app.get('/', function (req, res) {
     return res.status(200).end('Successful Connection to Server');
   });
 
+  app.get('/api/request', function (req, res) {
+    return res.status(200).end('Successful Connection to Route');
+  });
+
   
 
 //MONGODB CONNECTION
