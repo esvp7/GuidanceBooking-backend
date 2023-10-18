@@ -13,6 +13,10 @@ app.use(cors());
 
 //ROUTES
 app.use("/api/request", requestRoute);
+app.get('/', function (req, res) {
+    return res.status(200).end('Successful Connection to Server');
+  });
+
   
 
 //MONGODB CONNECTION
